@@ -7,26 +7,28 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Ben Mahoney // Web Developer</title>
   <meta name="description" content="Ben Mahoney's portfolio of web design projects">
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
   <!-- main logo / nav -->
   <header>
-    <h1>Ben Mahoney</h1>
-    <nav>
-      <ul>
-        <li><!-- link to navigate down page to about me -->
-            <a href="#about-me" class="btn btn-link">About Me</a>
-        </li>
-        <li><!-- link to navigate down page to Portfolio -->
+    <div class="header">
+      <h1>Ben Mahoney</h1>
+      <nav>
+        <ul>
+          <li><!-- link to navigate down page to about me -->
+              <a href="#about-me" class="btn btn-link">About Me</a>
+          </li>
+          <li><!-- link to navigate down page to Portfolio -->
             <a href="#portfolio" class="btn btn-link">Portfolio</a>
-        </li>
-        <li><!-- link to navigate down page to contact me -->
+          </li>
+          <li><!-- link to navigate down page to contact me -->
             <a href="#contact-me" class="btn btn-link">Contact</a>
-        </li>
-    </ul>
-    </nav>
+          </li>
+        </ul>
+      </nav>
+    </div>  
   </header>
 
   <!-- hero banner -->
@@ -39,22 +41,26 @@
   <main class="page-wrapper">
     <!-- about me -->
     <section class="page-section" id="about">
-      <h2>About Me</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
+      <article id="about-me" class="about-me">
+        <h2>About Me</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </article>
     </section>
 
     <!-- portfolio container -->
     <section class="page-section" id="work">
-      <h2>Portfolio</h2>
-      <article id="project1" class="project1">
-        <h2>Project 1</h2>
-        <img src="https://placehold.co/600x400/jpeg" alt="Placeholder image" class="center" />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      <article id="portfolio" class="portfolio">
+        <h2>Portfolio</h2>
+        <article id="project1" class="project1">
+         <h2>Project 1</h2>
+          <img src="https://placehold.co/600x400/jpeg" alt="Placeholder image" class="center" />
+           <p>
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
         <!-- project 1 -->    
+        </article>
       </article>
       <article id="project2" class="project2">
         <h2>Project 2</h2>
@@ -94,8 +100,9 @@
     <!-- contact -->
     <section class="page-section contact" id="contact">
       <h2>Contact</h2>
-      <nav>
-        <ul>
+      <article id="contact-me" class="contact-me">
+        <nav>
+          <ul>
             <li><!-- Telephone -->
                 <a href="#telephone" class="btn btn-link">Mobile<span class="07881752494"> 07881 752494</span></a>
             </li>
@@ -105,8 +112,9 @@
             <li><!-- LinkedIn -->
                 <a href="#linkedin" class="btn btn-link">LinkedIn</a>
             </li>
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      </article>
     </section>
   </main>
 </body>
