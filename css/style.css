@@ -16,9 +16,6 @@ body {
 
 header {
   padding: 20px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  background-color: var(--background-color);
-  color: var(--text-color);
   display: flex;
   justify-content: center;
   }
@@ -91,6 +88,9 @@ a {
   grid-gap: 15px;
   justify-content: center;
 }
+.portfolio h2 {
+  text-align: center;
+}
 
 .grid-item {
   border: 3px solid black;
@@ -127,6 +127,14 @@ footer nav ul {
   gap:5vw;
   padding-top: 25px;
 }
+p {
+  margin: 0;
+}@media (max-width:1300px) {
+  footer h2 {
+  margin-right: 120px;
+}
+}
+
 @media (max-width:1015px) {
   .portfolio {
   grid-template-columns: 300px 300px;
@@ -145,6 +153,22 @@ header {
   flex-direction: column;
   align-items: center;
 }
+header h1{
+  margin:0;
+  text-align: center;
+}
+header nav{
+  margin-left:0;
+  padding:0;
+  
+}
+.profile-pic {
+  min-width: 170.62px;
+  min-height: 161.41;
+}
+.about-me{
+  max-width: 401.2px;
+}
 .portfolio1-image, .portfolio-image {
   margin: 0px;
 }
@@ -153,6 +177,19 @@ header {
 }
 }
 @media (max-width:625px) {
+  header h1{
+    margin:0;
+    text-align: center;
+  }
+  header nav{
+    margin-left:0;
+    padding:0;
+    
+  }
+  
+  .about-me{
+    max-width: 401.2px;
+  }
   .project1 {
     grid-column-start: 1;
     grid-column-end: 2;
@@ -171,22 +208,61 @@ footer {
 }
 footer h2 {
   margin-left: 0px;
+  margin-right: 0px;
 }
-footer nav ul {
-  flex-direction: column;
-  align-items: center;
+footer nav ul{
+  padding-top: 0;
+  padding-left: 0;
+}
+
+}
+@media (max-width:375px) and (min-width:350px) {
+  .about-me{
+   font-size:14px;
+  }
+.portfolio{
+  font-size:14px;
+}
+
+}
+@media (max-width:349px) and (min-width:301px) {
+  .about-me{
+   font-size:12px;
+  }
+  .portfolio{
+    font-size:12px;
 }
 }
 @media (max-width:300px) {
+  header h1{
+    margin:0;
+    text-align: center;
+  }
+  header nav{
+    margin-left: 20px;
+    padding:0;
+    font-size: 16px;
+    
+  }
+  header nav ul{
+    padding-left: 0;
+  }
+ 
+  .about-me{
+    max-width: 401.2px;
+  }
+  .about-me p{
+    text-align: left;
+   
+    font-size:12px;
+  }
   .portfolio {
   grid-template-columns: 250px;
-  grid-template-rows: 650px 450px 450px;
+  font-size:12px;
 }
 .portfolio1-image, .portfolio-image {
   max-width: 245px;
 }
 }
-p {
-  margin: 0;
-}
+
 
