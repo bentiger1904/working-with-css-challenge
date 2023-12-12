@@ -144,13 +144,12 @@ p {
 @media (max-width:1015px) {
   .portfolio {
   grid-template-columns: 300px 300px;
-  grid-template-rows: 650px 900px 450px;
+  grid-template-rows: 650px 950px 450px;
 }
 .portfolio-image {
   max-width: 295px;
 }
 .portfolio1-image, .portfolio-image {
-  margin: 0px;
   float: none;
 }
 }
@@ -192,9 +191,7 @@ header nav{
   header nav{
     margin-left:0;
     padding:0;
-    
   }
-  
   .about-me{
     max-width: 401.2px;
   }
@@ -229,15 +226,17 @@ footer nav ul{
   }
 .portfolio{
   font-size:14px;
+  grid-template-rows: 500px 800px 450px;
 }
 }
-/*Screen size 301-349px*/
-@media (max-width:349px) and (min-width:301px) {
+/*Screen size 300-350px*/
+@media (max-width:350px) and (min-width:300px) {
   .about-me{
    font-size:12px;
   }
   .portfolio{
     font-size:12px;
+    grid-template-rows: 450px 700px 450px;
 }
 }
 /*Screen size 300px*/
@@ -256,15 +255,16 @@ footer nav ul{
   }
    .about-me{
     max-width: 401.2px;
+    font-size:12px;
   }
   .about-me p{
     text-align: left;
-   
     font-size:12px;
   }
   .portfolio {
   grid-template-columns: 250px;
   font-size:12px;
+  grid-template-rows: 400px 700px 450px;
 }
 .portfolio1-image, .portfolio-image {
   max-width: 245px;
