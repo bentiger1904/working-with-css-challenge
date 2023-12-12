@@ -14,7 +14,7 @@ Tasks;
 * When the page is resized or viewed on various screens and devices then the layout is responsive and adapts to my viewport.
 
 Live site
-You can find the live site here - 
+You can find the live site here - https://bentiger1904.github.io/working-with-css-challenge/
 
 License
 MIT License
